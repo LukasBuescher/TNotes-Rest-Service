@@ -13,11 +13,11 @@ import java.util.Optional;
 
 @CrossOrigin(origins = "http://localhost:5000")
 @RestController
-public class DayContoller{
+public class DayController {
 
     private final DayRepository dayRepository;
 
-    DayContoller(DayRepository dayRepository){this.dayRepository = dayRepository;}
+    DayController(DayRepository dayRepository){this.dayRepository = dayRepository;}
 
     @GetMapping("/days/{id}/exercises")
     List<Exercise> fullDay(@PathVariable Long id) {
