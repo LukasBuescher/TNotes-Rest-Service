@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * This Restcontroller handles all Restrequest specific to Days
+ * RestController which handles Rest requests regarding Days
  * @author Lukas Büscher
  */
 @CrossOrigin(origins = "http://localhost:5000")

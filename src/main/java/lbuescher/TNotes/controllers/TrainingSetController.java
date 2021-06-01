@@ -7,8 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 /**
- * Rest Controller which sends Training
- * @see lbuescher.TNotes.resources.Day
+ * RestController which handles Rest requests regarding TrainingSets
  * @author Lukas Büscher
  */
 @CrossOrigin(origins = "http://localhost:5000")

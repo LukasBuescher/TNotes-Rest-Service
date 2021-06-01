@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * The Restcontroller to send Routines to the Frontend-Application via the Restinterface
+ * RestController which handles Rest requests regarding Routines
  * @author Lukas Büscher
  */
 @CrossOrigin(origins = "http://localhost:5000")
