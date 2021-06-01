@@ -14,7 +14,6 @@ import java.util.Optional;
  * RestController which handles Rest requests regarding Routines
  * @author Lukas Büscher
  */
-@CrossOrigin(origins = "http://localhost:5000")
 @RestController
 public class RoutineController {
 

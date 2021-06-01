@@ -15,7 +15,6 @@ import java.util.Optional;
  * RestController which handles Rest requests regarding Days
  * @author Lukas Büscher
  */
-@CrossOrigin(origins = "http://localhost:5000")
 @RestController
 public class DayController {
 
