@@ -10,21 +10,37 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * The Restcontroller to send Routines to the Frontend-Application via the Restinterface
+ * @author Lukas Büscher
+ */
 @CrossOrigin(origins = "http://localhost:5000")
 @RestController
 public class RoutineController {
 
     private final RoutineRepository routineRepository;
 
+    /** This Constructor initializes a RoutineController
+     * @param routineRepository Repository in which the Routines are persisted
+     */
     RoutineController(RoutineRepository routineRepository) {
         this.routineRepository = routineRepository;
     }
 
+    /**
+     * This Method sends out all Routines within the routineRepository
+     * @return Json-List of all Routines
+     */
     @GetMapping("/routines")
     List<Routine> all() {
         return (List<Routine>) routineRepository.findAll();
     }
 
+    /**
+     * This Method returns one Routine via Rest
+     * @param id of the requested Routine
+     * @return Json of specified Routine
+     */
     @GetMapping("/routines/{id}")
     Optional<Routine> routine(@PathVariable Long id) {
         return routineRepository.findById(id);
